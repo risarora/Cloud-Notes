@@ -6,3 +6,4 @@
 ## Skills Measured
 ![image](https://user-images.githubusercontent.com/4485129/115365978-81f61100-a1e2-11eb-9812-bed2d2f44fe7.png)
 
+![image](https://user-images.githubusercontent.com/4485129/115367952-3fcdcf00-a1e4-11eb-9ad4-4a8b86f3b6a8.png)
