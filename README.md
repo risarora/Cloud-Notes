@@ -13,3 +13,11 @@
 ![image](https://user-images.githubusercontent.com/4485129/115372673-c389ba80-a1e8-11eb-856d-adfe7df9952a.png)
 
 
+### Seleetc Redundancy
+![image](https://user-images.githubusercontent.com/4485129/115373063-20857080-a1e9-11eb-98ee-8999c0523c99.png)
+
+Deployment in progress
+![image](https://user-images.githubusercontent.com/4485129/115373116-2ed38c80-a1e9-11eb-81fc-51334815780e.png)
+
+![image](https://user-images.githubusercontent.com/4485129/115373200-4743a700-a1e9-11eb-8625-aafcb49149c1.png)
+
