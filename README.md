@@ -21,3 +21,13 @@ Deployment in progress
 
 ![image](https://user-images.githubusercontent.com/4485129/115373200-4743a700-a1e9-11eb-8625-aafcb49149c1.png)
 
+
+## Access (IAM)
+![image](https://user-images.githubusercontent.com/4485129/115373577-a5708a00-a1e9-11eb-9647-2a2d31fed1e0.png)
+
+### Create Cosmos DB
+![image](https://user-images.githubusercontent.com/4485129/115376155-16b13c80-a1ec-11eb-98ad-7aa369ef6136.png)
+
+
+## Data Integration 
+![image](https://user-images.githubusercontent.com/4485129/115380127-dfdd2580-a1ef-11eb-8ee0-c360bd8be38c.png)
