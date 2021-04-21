@@ -78,6 +78,34 @@ Read more about crawlers and classifiers here: https://docs.aws.amazon.com/glue/
 ![image](https://user-images.githubusercontent.com/4485129/115542303-c60a1400-a2bd-11eb-81a5-56e1a3ddd910.png)
 
 
+Data Movement
+Data Movement   
+Data Lakes allow you to import any amount of data that can come in real-time. Data is collected from multiple sources, and moved into the data lake in its original format. This process allows you to scale to data of any size, while saving time of defining data structures, schema, and transformations.   
+
+Read more about data lakes on AWS here: https://aws.amazon.com/big-data/datalakes-and-analytics/https://aws.amazon.com/big-data/datalakes-and-analytics/what-is-a-data-lake/  
+
+#### Amazon Kinesis 
+Amazon Kinesis makes it easy to collect, process, and analyze real-time, streaming data so you can get timely insights and react quickly to new information. Amazon Kinesis offers key capabilities to cost-effectively process streaming data at any scale, along with the flexibility to choose the tools that best suit the requirements of your application. With Amazon Kinesis, you can ingest real-time data such as video, audio, application logs, website clickstreams, and IoT telemetry data for machine learning, analytics, and other applications. Amazon Kinesis enables you to process and analyze data as it arrives and respond instantly instead of having to wait until all your data is collected before the processing can begin.     
+
+There are multiple services in the Amazon Kinesis family. For data ingestion, there is Amazon Kinesis Data Streams, Amazon Kinesis Video Streams, and Amazon Kinesis Data Firehose.   Read more about Amazon Kinesis here: https://aws.amazon.com/kinesis/    
+
+To better understand each service please review the diagrams below.       
+
+###### Amazon Kinesis Video Streams:    
+![image](https://user-images.githubusercontent.com/4485129/115542764-3c0e7b00-a2be-11eb-85e6-1b8a0f0226aa.png)
+
+##### Amazon Kinesis Data Streams:     
+![image](https://user-images.githubusercontent.com/4485129/115542827-4e88b480-a2be-11eb-9ec7-189030d09ad2.png)
+
+##### Amazon Kinesis Data Firehose:
+![image](https://user-images.githubusercontent.com/4485129/115542846-55afc280-a2be-11eb-8e5b-0fffd35eb65c.png)
+
+
+### Amazon API Gateway   
+Amazon API Gateway is a fully managed service that makes it easy to create, publish, and maintain secure APIs at scale. APIs are the front door to backend applications and services. API Gateway handles all the tasks involved in accepting and processing up to hundreds of thousands of concurrent API calls, including traffic management, CORS support, authorization and access control, throttling, monitoring, and API version management.   
+
+Read more about API Gateway here: https://aws.amazon.com/api-gateway/
+
 
 ### 3.  analytics and processing
 
