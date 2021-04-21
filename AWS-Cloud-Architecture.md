@@ -71,6 +71,11 @@ Read more about crawlers and classifiers here: https://docs.aws.amazon.com/glue/
 
 
 ### 2. Data Movement
+#### AWS API Gateway
+
+![image](https://user-images.githubusercontent.com/4485129/115541722-19c82d80-a2bd-11eb-9a68-eb1f6d60f100.png)
+
+
 
 ### 3.  analytics and processing
 
