@@ -6,10 +6,11 @@ We'll explore AWS services that can be used in data lake architectures, like Ama
 
 1. Storage and cataloguing
 2. Data Movement
-3.  analytics and processing
+3. Analytics and processing
 
 
 ### 1. Storage and cataloguing
+<details>
 The first category is AWS services used for data storage and cataloguing. And data lake has a few key components. It stores and secures data at an unlimited scale. It allows for structured and unstructured data to be stored together. It catalogs and indexes data without data movement, and it connects data with services and tooling for analysis and processing. So, what AWS services can you use to enable these key factors of a data lake? We will cover that with the AWS services used for data storage and cataloguing.
 ![image](https://user-images.githubusercontent.com/4485129/115531164-167b7480-a2b2-11eb-8fb5-b9310aef2a3e.png)
 
@@ -34,7 +35,7 @@ AWS Glue Data Catalog consists of tables, which are the metadata definition that
 A table consists of a schema, and tables are then organized into logical groups called databases. 
 You used what is called a glue crawler to populate the AWS Glue Data Catalog with tables. 
 
-<describe>
+<details>
  
 ## Amazon S3 and Glue Data Catalog
 ### Amazon S3 
@@ -68,10 +69,12 @@ Crawlers use classifiers, a classifier reads the data in a data store. If it rec
 
 Read more about crawlers and classifiers here: https://docs.aws.amazon.com/glue/latest/dg/add-classifier.html  
 
-</describe>
-
+</details>
+</details>
 
 ### 2. Data Movement
+<details>
+
 #### AWS API Gateway
 
 ![image](https://user-images.githubusercontent.com/4485129/115541722-19c82d80-a2bd-11eb-9a68-eb1f6d60f100.png)
@@ -106,10 +109,11 @@ To better understand each service please review the diagrams below.
 Amazon API Gateway is a fully managed service that makes it easy to create, publish, and maintain secure APIs at scale. APIs are the front door to backend applications and services. API Gateway handles all the tasks involved in accepting and processing up to hundreds of thousands of concurrent API calls, including traffic management, CORS support, authorization and access control, throttling, monitoring, and API version management.   
 
 Read more about API Gateway here: https://aws.amazon.com/api-gateway/
-
+</details>
 
 ### 3.  analytics and processing
-
+<details>
+ 
 ### EMR, Glue Jobs, Lambda, Kinesis Analytics, RedShift
 
 #### Apache Hadoop on AWS   
@@ -126,8 +130,6 @@ Read more about Amazon EMR here: https://docs.aws.amazon.com/emr/latest/Manageme
 A job is the business logic that performs the extract, transform, and load (ETL) work in AWS Glue. When you start a job, AWS Glue runs a script that extracts data from sources, transforms the data, and loads it into targets. You can create jobs in the ETL section of the AWS Glue console.    
 
 ![image](https://user-images.githubusercontent.com/4485129/115675081-e690a780-a36b-11eb-9b09-135be87a7d1d.png)
-
- 
 
 Read more about authoring AWS Glue jobs here: https://docs.aws.amazon.com/glue/latest/dg/author-job.html  
 
@@ -160,4 +162,23 @@ Amazon Elasticsearch Service (Amazon ES) is a managed service that makes it easy
 
 Read more about Amazon ES here: https://docs.aws.amazon.com/elasticsearch-service/latest/developerguide/what-is-amazon-elasticsearch-service.html  
 
+
+</details>
+
+
+## AWS Lake Formation
+
+AWS Lake Formation makes it easier for you to build, secure, and manage data lakes. Lake Formation helps you do the following, either directly or through other AWS services:  
+
+Register the Amazon Simple Storage Service (Amazon S3) buckets and paths where your data lake will reside.
+Orchestrate data flows that ingest, cleanse, transform, and organize the raw data.
+Create and manage a Data Catalog containing metadata about data sources and data in the data lake.
+Define granular data access policies to the metadata and data through a grant/revoke permissions model.
+The following diagram illustrates how data is loaded and secured in Lake Formation.
+
+![image](https://user-images.githubusercontent.com/4485129/115702890-18633780-a387-11eb-96f5-5c7f1919b056.png)
+
+As the diagram shows, Lake Formation manages AWS Glue crawlers, AWS Glue ETL jobs, the Data Catalog, security settings, and access control. After the data is securely stored in the data lake, users can access the data through their choice of analytics services, including Amazon Athena, Amazon Redshift, and Amazon EMR.  
+
+Read more about Amazon Lake Formation here: https://docs.aws.amazon.com/lake-formation/latest/dg/what-is-lake-formation.html
 
