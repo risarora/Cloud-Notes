@@ -12,6 +12,7 @@ We'll explore AWS services that can be used in data lake architectures, like Ama
 ### 1. Storage and cataloguing
 <details>
 The first category is AWS services used for data storage and cataloguing. And data lake has a few key components. It stores and secures data at an unlimited scale. It allows for structured and unstructured data to be stored together. It catalogs and indexes data without data movement, and it connects data with services and tooling for analysis and processing. So, what AWS services can you use to enable these key factors of a data lake? We will cover that with the AWS services used for data storage and cataloguing.
+ 
 ![image](https://user-images.githubusercontent.com/4485129/115531164-167b7480-a2b2-11eb-8fb5-b9310aef2a3e.png)
 
 #### Storage - S3 is the most popular choice for storage option for a Lake
