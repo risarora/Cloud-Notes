@@ -27,5 +27,5 @@ Context:
 * S3_Bucket_3 event triggers Lambda_4 which deletes the Video_2 and sends data about the 3x thumbnail images back to my app's API.
 
 
-
+SOURCE :  https://www.reddit.com/r/aws/comments/jmzctb/please_critique_my_aws_architecture_for_use_case/
 [AWS Lambda Architecture.svg.zip](https://github.com/risarora/Cloud-Notes/files/6403984/AWS.Lambda.Architecture.svg.zip)
