@@ -19,6 +19,20 @@ This week will cover Kineses
 
 ### Use the Right Tool for the Job
 ### Understanding Data Structure and When To Process Data
+
+When we do not want to alter the raw data then classic ELT is performed
+Eg. Interplaterary data 
+
+Data lakes prefer **ELT** instead of **ETL**
+For Medical records we can remove the **pII (personally Identifiable Information)** from data before storing data in *S3*
+After loading in s3 data can be processed.
+Why image and data not processed at same time.
+
+1. Different type of services are used.
+2. Data needed not available at curent time.
+
+This iscalled **EtLT**
+
 ### Data Streaming Ingestion With Kinesis Services
 ### Reading: Diving Deep on Amazon Kinesis
 ### Batch Data Ingestion with AWS Transfer Family
