@@ -10,6 +10,13 @@ In Week 3, you'll explore specifics of data cataloging and ingestion, and learn 
 * Analyze data ingestion in an architectural diagram
 
 ### Introduction to Week 3
+This week will cover Kineses
+* AWS Kinesis Firehose
+* AWS Kinesis Datastreams
+* AWS Kinesis Lake
+* AWS Snow Family
+* AWS Transfer Family
+
 ### Use the Right Tool for the Job
 ### Understanding Data Structure and When To Process Data
 ### Data Streaming Ingestion With Kinesis Services
