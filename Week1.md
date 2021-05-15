@@ -3,17 +3,18 @@ The goal of this course is to equip you with the knowledge needed to understand 
 
 ## Introduction to Week 1
 ## Why Data Lakes
-The main reasons to invest in a data lake are: to increase operational efficiency, make data available from departmental silos, lower transactional costs, and offload capacity from databases and data warehouses. Databases usually have its storage and processing mechanisms tied together, making it less flexible to-scale storage without processing and vice versa.
-On the other hand, a data lake is a centralized repository that should allow you to securely store all your structured and unstructured data with no scaling restrictions.
-storing your data without having to think about its structure
-decoupling storage from data processing, user can use different data processing and data visualization components that look at the same data,
+The main reasons to invest in a data lake are: to increase operational efficiency, make data available from departmental silos, lower transactional costs, and offload capacity from databases and data warehouses.     
+Datalake have storage and processing mechanisms decoupled.
+* Cheaper and more versatile.
+Decoupling storage from data processing, user can use different data processing and data visualization components that look at the same data,
+Store your data without having to think about its structure
 
 ## Characteristics of Data Lakes
 * data-agnostic. 
 * future proof
-There are two kinds of processing involved in a data lakes. 
-First is the process made before or while ingesting data. 
-Second is process made after data has been stored. This process includes, but is not limited to cleansing, aggregating and reaching, merging with other datasets, and much more. 
+There are two kinds of processing involved in a data lakes.    
+* First is the process made before or while ingesting data. 
+* Second is process made after data has been stored. This process includes, but is not limited to cleansing, aggregating and reaching, merging with other datasets, and much more. 
 
 ## Data Lakes Components
 Four main components
@@ -26,6 +27,10 @@ Four main components
     AWS Glue which execute Hadoop jobs on demand where you only pay when there is a job running.
 * Protect and secure 
 secure way with configurable permission mechanisms that prevent unauthorized users from accessing the data
+
+## Comparison of a Data Lake to a Data Warehouse
+schema-on-write architecture
+AWS has a service called Amazon Athena that allow you to match the table schema to your dataset and not the datasets to your table schema
 
 Data Lakes and Data Warehouses
 Data Lakes compared to Data Warehouses – Two Different Approaches 
