@@ -29,10 +29,14 @@ Four main components
 secure way with configurable permission mechanisms that prevent unauthorized users from accessing the data
 
 ## Comparison of a Data Lake to a Data Warehouse
-schema-on-write architecture
+* Data lake uses schema-on-read and Data Warehouses uses schema-on-write. 
+<!--
 AWS has a service called Amazon Athena that allow you to match the table schema to your dataset and not the datasets to your table schema
+-->
+* Data warehouses work with structured data only, data lakes work with unstructured and structured data natively.
 
-Data Lakes and Data Warehouses
+## Data Lakes and Data Warehouses
+<!--
 Data Lakes compared to Data Warehouses – Two Different Approaches 
 Depending on the requirements, a typical organization will require both a data warehouse and a data lake as they serve different needs, and use cases. 
 
@@ -41,6 +45,7 @@ A data warehouse is a database optimized to analyze relational data coming from 
 A data lake is different, because it stores relational data from line of business applications, and non-relational data from mobile apps, IoT devices, and social media. The structure of the data or schema is not defined when data is captured. This means you can store all of your data without careful design or the need to know what questions you might need answers for in the future. Different types of analytics on your data like SQL queries, big data analytics, full text search, real-time analytics, and machine learning can be used to uncover insights. 
 
 As organizations with data warehouses see the benefits of data lakes, they are evolving their warehouse to include data lakes, and enable diverse query capabilities, data science use-cases, and advanced capabilities for discovering new information models. Gartner names this evolution the “Data Management Solution for Analytics” or “DMSA.”
+-->
 
 ### Data warehouse vs. Data lake
 ![It5HCGkWSfqeRwhpFnn6WQ_b75153889ebf412e91cd07b1bddc9309_image-1-](https://user-images.githubusercontent.com/4485129/117894992-23045300-b2db-11eb-817a-d0c5db505f97.png)
