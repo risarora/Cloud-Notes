@@ -55,5 +55,9 @@ As organizations with data warehouses see the benefits of data lakes, they are e
 ![gpJapWkaSAmSWqVpGugJDw_a5509ea0cbe74a62b687d04d9fe3ef1e_image-2-](https://user-images.githubusercontent.com/4485129/117895118-58a93c00-b2db-11eb-962c-21db995eee40.png)
 
 ## Sample Data Lake Architectures
+#### Simple data lake for one source
 ![image](https://user-images.githubusercontent.com/4485129/118344367-55b48280-b54b-11eb-9da4-3cfbc2abb4f6.png)
   
+### Expanding datalake functionality
+![image](https://user-images.githubusercontent.com/4485129/118344509-07ec4a00-b54c-11eb-91f6-8df6d8fb04f9.png)
+
