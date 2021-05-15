@@ -26,6 +26,18 @@ Data Lake has decoupled layers which allows for users to manage and scale and se
  
 ### Reading: Amazon S3 and Glue Data Catalog
 
+### AWS Services Used for Data Movement
+Kinesis Firehose ingest data from sources in real-time
+Data lake on AWS will be formed by data coming from various places and the tools that you use for data ingestion will vary as well. You can use a service from the Kinesis family for real-time data ingestion, Amazon API Gateway for RESTful data ingestion, App flow for data ingestion from SaaS applications, Data Exchange, or the Registry of open data for public datasets that you want to ingest into your data lake.
+
+### Data lake on AWS will be formed by data coming from various places and the tools that you use for data ingestion will vary as well. 
+* Kinesis family for real-time data ingestion
+* Amazon API Gateway for RESTful data ingestion
+* App flow for data ingestion from SaaS applications
+* Data Exchange, or the Registry of open data for ingestion of public datasets
+
+### Reading: Data Movement
+
 <details><summary>CLICK ME</summary>
 
 #### Data Movement
@@ -59,17 +71,6 @@ Read more about API Gateway here: https://aws.amazon.com/api-gateway/
 
 </details>
 
-### AWS Services Used for Data Movement
-Kinesis Firehose ingest data from sources in real-time
-Data lake on AWS will be formed by data coming from various places and the tools that you use for data ingestion will vary as well. You can use a service from the Kinesis family for real-time data ingestion, Amazon API Gateway for RESTful data ingestion, App flow for data ingestion from SaaS applications, Data Exchange, or the Registry of open data for public datasets that you want to ingest into your data lake.
-
-### Data lake on AWS will be formed by data coming from various places and the tools that you use for data ingestion will vary as well. 
-* Kinesis family for real-time data ingestion
-* Amazon API Gateway for RESTful data ingestion
-* App flow for data ingestion from SaaS applications
-* Data Exchange, or the Registry of open data for ingestion of public datasets
-
-### Reading: Data Movement
 ### AWS Services for Data Processing
 ### AWS Services for Analytics
 ### AWS Services for Predictive Analytics and Machine Learning
