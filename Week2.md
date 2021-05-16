@@ -135,10 +135,11 @@ Read more about Amazon ES here: https://docs.aws.amazon.com/elasticsearch-servic
 #### AWS Lake Formation
 AWS Lake Formation makes it easier for you to build, secure, and manage data lakes. Lake Formation helps you do the following, either directly or through other AWS services:  
 
-Register the Amazon Simple Storage Service (Amazon S3) buckets and paths where your data lake will reside.
-Orchestrate data flows that ingest, cleanse, transform, and organize the raw data.
-Create and manage a Data Catalog containing metadata about data sources and data in the data lake.
-Define granular data access policies to the metadata and data through a grant/revoke permissions model.
+* Register the Amazon Simple Storage Service (Amazon S3) buckets and paths where your data lake will reside.
+* Orchestrate data flows that ingest, cleanse, transform, and organize the raw data.
+* Create and manage a Data Catalog containing metadata about data sources and data in the data lake.
+* Define granular data access policies to the metadata and data through a grant/revoke permissions model.
+
 The following diagram illustrates how data is loaded and secured in Lake Formation.
 ![image](https://user-images.githubusercontent.com/4485129/118407099-b7383680-b69c-11eb-8a53-58df7f939f45.png)
 
