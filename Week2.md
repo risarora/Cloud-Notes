@@ -140,6 +140,7 @@ Orchestrate data flows that ingest, cleanse, transform, and organize the raw dat
 Create and manage a Data Catalog containing metadata about data sources and data in the data lake.
 Define granular data access policies to the metadata and data through a grant/revoke permissions model.
 The following diagram illustrates how data is loaded and secured in Lake Formation.
+![image](https://user-images.githubusercontent.com/4485129/118407099-b7383680-b69c-11eb-8a53-58df7f939f45.png)
 
 As the diagram shows, Lake Formation manages AWS Glue crawlers, AWS Glue ETL jobs, the Data Catalog, security settings, and access control. After the data is securely stored in the data lake, users can access the data through their choice of analytics services, including Amazon Athena, Amazon Redshift, and Amazon EMR.  
 
