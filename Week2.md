@@ -125,6 +125,25 @@ Amazon Elasticsearch Service (Amazon ES) is a managed service that makes it easy
 Read more about Amazon ES here: https://docs.aws.amazon.com/elasticsearch-service/latest/developerguide/what-is-amazon-elasticsearch-service.html  
 
 </details>
+
 ### Introduction to AWS Lake Formation
+
 ### Reading: AWS Lake Formation
+
+<details><summary>CLICK ME</summary>
+ 
+#### AWS Lake Formation
+AWS Lake Formation makes it easier for you to build, secure, and manage data lakes. Lake Formation helps you do the following, either directly or through other AWS services:  
+
+Register the Amazon Simple Storage Service (Amazon S3) buckets and paths where your data lake will reside.
+Orchestrate data flows that ingest, cleanse, transform, and organize the raw data.
+Create and manage a Data Catalog containing metadata about data sources and data in the data lake.
+Define granular data access policies to the metadata and data through a grant/revoke permissions model.
+The following diagram illustrates how data is loaded and secured in Lake Formation.
+
+As the diagram shows, Lake Formation manages AWS Glue crawlers, AWS Glue ETL jobs, the Data Catalog, security settings, and access control. After the data is securely stored in the data lake, users can access the data through their choice of analytics services, including Amazon Athena, Amazon Redshift, and Amazon EMR.  
+
+Read more about Amazon Lake Formation here: https://docs.aws.amazon.com/lake-formation/latest/dg/what-is-lake-formation.html
+</details>
+
 ### Ungraded External Tool: Ungraded External ToolLab 1 Prompt: Lab 1 Discussion
