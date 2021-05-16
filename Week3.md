@@ -49,7 +49,43 @@ Why image and data not processed at same time.
 This iscalled **EtLT**
 
 ### Data Streaming Ingestion With Kinesis Services
+
+* Amazon Kinesis Data Streams
+* Kinesis Analytics
+* Kinesis Firehose
+* Kinesis Video Streams
+#### Data Retension 
+Kinesis works by pull mechanism. The consumer 
 ### Reading: Diving Deep on Amazon Kinesis
+
+<details>
+
+#### AWS Kinesis Family 
+Amazon Kinesis makes it easy to collect, process, and analyze real-time, streaming data so you can get timely insights and react quickly to new information. Amazon Kinesis offers key capabilities to cost-effectively process streaming data at any scale, along with the flexibility to choose the tools that best suit the requirements of your application. With Amazon Kinesis, you can ingest real-time data such as video, audio, application logs, website clickstreams, and IoT telemetry data for machine learning, analytics, and other applications. Amazon Kinesis enables you to process and analyze data as it arrives and respond instantly instead of having to wait until all your data is collected before the processing can begin.
+
+More info: https://aws.amazon.com/kinesis/
+
+#### Amazon Kinesis Data Streams
+Amazon Kinesis Data Streams (KDS) is a massively scalable and durable real-time data streaming service. KDS can continuously capture gigabytes of data per second from hundreds of thousands of sources such as website clickstreams, database event streams, financial transactions, social media feeds, IT logs, and location-tracking events. The data collected is available in milliseconds to enable real-time analytics use cases such as real-time dashboards, real-time anomaly detection, dynamic pricing, and more.
+
+More info: https://aws.amazon.com/kinesis/data-streams/
+
+#### Amazon Kinesis Firehose
+Amazon Kinesis Data Firehose is the easiest way to reliably load streaming data into data lakes, data stores, and analytics services. It can capture, transform, and deliver streaming data to Amazon S3, Amazon Redshift, Amazon Elasticsearch Service, generic HTTP endpoints, and service providers like Datadog, New Relic, MongoDB, and Splunk. It is a fully managed service that automatically scales to match the throughput of your data and requires no ongoing administration. It can also batch, compress, transform, and encrypt your data streams before loading, minimizing the amount of storage used and increasing security.
+
+More info: https://aws.amazon.com/kinesis/data-firehose/?kinesis-blogs.sort-by=item.additionalFields.createdDate&kinesis-blogs.sort-order=desc
+
+#### Amazon Kinesis Data Analytics
+Amazon Kinesis Data Analytics is the easiest way to transform and analyze streaming data in real time with Apache Flink. Apache Flink is an open source framework and engine for processing data streams. Amazon Kinesis Data Analytics reduces the complexity of building, managing, and integrating Apache Flink applications with other AWS services. Amazon Kinesis Data Analytics takes care of everything required to run streaming applications continuously, and scales automatically to match the volume and throughput of your incoming data. With Amazon Kinesis Data Analytics, there are no servers to manage, no minimum fee or setup cost, and you only pay for the resources your streaming applications consume.
+
+More info: https://aws.amazon.com/kinesis/data-analytics/
+
+#### Amazon Kinesis Analytics In-Application Streams and Pumps
+When you configure application input, you map a streaming source to an in-application stream that is created. Data continuously flows from the streaming source into the in-application stream. An in-application stream works like a table that you can query using SQL statements, but it's called a stream because it represents continuous data flow.
+
+More info: https://docs.aws.amazon.com/kinesisanalytics/latest/dev/streams-pumps.html
+</details>
+
 ### Batch Data Ingestion with AWS Transfer Family
 ### Batch Data Ingestion with AWS Snow Family
 ### Reading: Batch Data Ingestion with AWS Services
