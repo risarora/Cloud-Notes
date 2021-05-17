@@ -89,6 +89,41 @@ More info: https://docs.aws.amazon.com/kinesisanalytics/latest/dev/streams-pumps
 ### Batch Data Ingestion with AWS Transfer Family
 ### Batch Data Ingestion with AWS Snow Family
 ### Reading: Batch Data Ingestion with AWS Services
+<details>
+
+### Data Ingestion Methods
+One of the core capabilities of a data lake architecture is the ability to quickly and easily ingest multiple types of data, such as real-time streaming data and bulk data assets from on-premises storage platforms, as well as data generated and processed by legacy on-premises platforms, such as mainframes and data warehouses. AWS provides services and capabilities to cover all of these scenarios.
+
+More info: https://docs.aws.amazon.com/whitepapers/latest/building-data-lakes/data-ingestion-methods.html
+
+#### AWS Snow Family
+The AWS Snow Family helps customers that need to run operations in austere, non-data center environments, and in locations where there's lack of consistent network connectivity. The Snow Family, comprised of AWS Snowcone, AWS Snowball, and AWS Snowmobile, offers a number of physical devices and capacity points, most with built-in computing capabilities. These services help physically transport up to exabytes of data into and out of AWS. Snow Family devices are owned and managed by AWS and integrate with AWS security, monitoring, storage management, and computing capabilities.
+
+AWS Snowcone Launch - A Small, Portable, Rugged, and Secure Edge Computing and Data Transfer Device
+Check the very funny and informative video at: https://www.youtube.com/watch?v=9euPWOLtzuw 
+
+AWS Snowcone is the smallest member of the AWS Snow Family of edge computing and data transfer devices. Snowcone is portable, rugged, and secure – small and light enough to fit in a backpack, and able to withstand harsh environments. Customers use Snowcone to deploy applications at the edge, and to collect data, process it locally, and move it to AWS either offline (by shipping the device to AWS) or online (by using AWS DataSync on Snowcone to send the data to AWS over the network).
+
+#### AWS Snowcone 
+AWS Snowcone is the smallest member of the AWS Snow Family of edge computing, edge storage, and data transfer devices, weighing in at 4.5 pounds (2.1 kg) with 8 terabytes of usable storage. Snowcone is ruggedized, secure, and purpose-built for use outside of a traditional data center. Its small form factor makes it a perfect fit for tight spaces or where portability is a necessity. You can use Snowcone in backpacks on first responders, or for IoT, vehicular, and even drone use cases. You can execute compute applications at the edge, and you can ship the device with data to AWS for offline data transfer, or you can transfer data online with AWS DataSync from edge locations.
+
+More info: https://aws.amazon.com/snowcone/?sc_channel=EL&sc_campaign=Anim_Explainer_2020_vid%20&sc_medium=YouTube&sc_content=video7023&sc_detail=MIGRATION&TRANSFER&sc_country=US
+
+#### Using AWS OpsHub for Snow Family to Manage Devices
+The Snow Family Devices now offer a user-friendly tool, AWS OpsHub for Snow Family, that you can use to manage your devices and local AWS services. You use AWS OpsHub on a client computer to perform tasks such as unlocking and configuring single or clustered devices, transferring files, and launching and managing instances running on Snow Family Devices. You can use AWS OpsHub to manage both the Storage Optimized and Compute Optimized device types and the Snow device. The AWS OpsHub application is available at no additional cost to you.
+
+More info: https://docs.aws.amazon.com/snowball/latest/developer-guide/aws-opshub.html
+
+#### Enable password authentication for AWS Transfer Family using AWS Secrets Manager (updated)
+More info: https://aws.amazon.com/blogs/storage/enable-password-authentication-for-aws-transfer-family-using-aws-secrets-manager-updated/
+
+#### AWS Transfer for SFTP – Fully Managed SFTP Service for Amazon S3 
+This blog post contain further information on how to configure AWS Transfer for SFTP.
+
+More info: https://aws.amazon.com/blogs/aws/new-aws-transfer-for-sftp-fully-managed-sftp-service-for-amazon-s3/
+
+
+</details>
 ### Data Cataloging
 ### Using Glue Crawlers
 ### Reading: The Importance of Data Cataloging
