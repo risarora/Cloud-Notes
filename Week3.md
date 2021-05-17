@@ -124,6 +124,7 @@ More info: https://aws.amazon.com/blogs/aws/new-aws-transfer-for-sftp-fully-mana
 
 
 </details>
+
 ### Data Cataloging
 ### Using Glue Crawlers
 ### Reading: The Importance of Data Cataloging
