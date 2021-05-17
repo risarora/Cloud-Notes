@@ -1,6 +1,6 @@
 # Notes for Cloudera Introduction to Designing Data Lakes on AWS
 
-![Week 1](0)
-[Week 2](0)
-[Week 3](0)
-[Week 4](0)
+* [Week 1](Week1.md)
+* [Week 2](Week2.md)
+* [Week 3](Week3.md)
+* [Week 4](Week4.md)
