@@ -126,7 +126,16 @@ More info: https://aws.amazon.com/blogs/aws/new-aws-transfer-for-sftp-fully-mana
 </details>
 
 ### Data Cataloging
+
+* First the location, 
+* Second the serializer, and deserializer are also known by sired 
+* Third the table schema.
+
+Once you have the where, how and what properly configured, you have a working table in the Glue Age catalog which you can perform SQL queries with Amazon Athena
+
 ### Using Glue Crawlers
+
+
 ### Reading: The Importance of Data Cataloging
 <details>
 
