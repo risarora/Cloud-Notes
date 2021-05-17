@@ -92,5 +92,36 @@ More info: https://docs.aws.amazon.com/kinesisanalytics/latest/dev/streams-pumps
 ### Data Cataloging
 ### Using Glue Crawlers
 ### Reading: The Importance of Data Cataloging
+<details>
+
+#### Data Cataloging
+More info: https://docs.aws.amazon.com/whitepapers/latest/building-data-lakes/data-cataloging.html
+
+The earliest challenges that inhibited building a data lake were keeping track of all of the raw assets as they were loaded into the data lake, and then tracking all of the new data assets and versions that were created by data transformation, data processing, and analytics. Thus, an essential component of an Amazon S3-based data lake is the data catalog. The data catalog provides a query-able interface of all assets stored in the data lake’s S3 buckets. The data catalog is designed to provide a single source of truth about the contents of the data lake.
+
+There are two general forms of a data catalog: a comprehensive data catalog that contains information about all assets that have been ingested into the S3 data lake, and a Hive Metastore Catalog (HCatalog) that contains information about data assets that have been transformed into formats and table definitions that are usable by analytics tools like Amazon Athena, Amazon Redshift, Amazon Redshift Spectrum, and Amazon EMR. The two catalogs are not mutually exclusive and both may exist. The comprehensive data catalog can be used to search for all assets in the data lake, and the HCatalog can be used to discover and query data assets in the data lake.
+
+#### Comprehensive Data Catalog 
+The comprehensive data catalog can be created by using standard AWS services like AWS Lambda, Amazon DynamoDB, and Amazon Elasticsearch Service (Amazon ES). At a high level, Lambda triggers are used to populate DynamoDB tables with object names and metadata when those objects are put into Amazon S3 then Amazon ES is used to search for specific assets, related metadata, and data classifications. The following figure shows a high-level architectural overview of this solution.
+
+![image](https://user-images.githubusercontent.com/4485129/118430578-fc3a8800-b6f1-11eb-810d-49b8a23b9cd4.png)
+
+#### HCatalog with AWS Glue 
+AWS Glue can be used to create a Hive-compatible Metastore Catalog of data stored in an Amazon S3-based data lake. To use AWS Glue to build your data catalog, register your data sources with AWS Glue in the AWS Management Console. AWS Glue will then crawl your S3 buckets for data sources and construct a data catalog using pre-built classifiers for many popular source formats and data types, including JSON, CSV, Parquet, and more. You may also add your own classifiers or choose classifiers from the AWS Glue community to add to your crawls to recognize and catalog other data formats. The AWS Glue-generated catalog can be used by Amazon Athena, Amazon Redshift, Amazon Redshift Spectrum, and Amazon EMR, as well as third-party analytics tools that use a standard Hive Metastore Catalog. 
+
+More info: https://docs.aws.amazon.com/whitepapers/latest/building-data-lakes/data-cataloging.html
+
+#### Data Ingestion Methods
+One of the core capabilities of a data lake architecture is the ability to quickly and easily ingest multiple types of data, such as real-time streaming data and bulk data assets from on-premises storage platforms, as well as data generated and processed by legacy on-premises platforms, such as mainframes and data warehouses. AWS provides services and capabilities to cover all of these scenarios.
+
+More info: https://docs.aws.amazon.com/whitepapers/latest/building-data-lakes/data-ingestion-methods.html
+
+#### Future Proofine the Data Lake
+A data lake built on AWS can immediately solve a broad range of business analytics challenges and quickly provide value to your business. However, business needs are constantly evolving, AWS and the analytics partner ecosystem are rapidly evolving and adding new services and capabilities, as businesses and their data lake users achieve more experience and analytics sophistication over time. Therefore, it’s important that the data lake can seamlessly and non-disruptively evolve as needed.
+
+AWS futureproofs your data lake with a standardized storage solution that grows with your organization by ingesting and storing all of your business’s data assets on a platform with virtually unlimited scalability and well-defined APIs and integrates with a wide variety of data processing tools. This allows you to add new capabilities to your data lake as you need them without infrastructure limitations or barriers. Additionally, you can perform agile analytics experiments against data lake assets to quickly explore new processing methods and tools, and then scale the promising ones into production without the need to build new infrastructure, duplicate and/or migrate data, and have users migrate to a new platform. In closing, a data lake built on AWS allows you to evolve your business around your data assets, and to use these data assets to quickly and agilely drive more business value and competitive differentiation without limits. 
+ 
+</details>
+
 ### Reviewing the Ingestion Part in Data Lake Architectures
 ### External ToolLab 2
