@@ -6,6 +6,9 @@
 * Leaving data in its raw format is a great idea. Others can prep the data the way that they see fit.
 * The data is then moved to chaper s3 storages as the data ages
 * Users can use S3 lifecycle policies to move raw data to more cost-effective storage tiers as it becomes more infrequently accessed over time.
+* Multiple types of Dataprep that you might create process for. 
+ * **Shaping**
+
 ### File Optimizations
 ### Using S3, Glue and Athena to Get Insights about NYC Taxi Data
 ### Reading: Columnar Data Formats and Amazon Athena Optimizations
