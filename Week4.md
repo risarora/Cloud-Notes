@@ -51,9 +51,9 @@ Because of cost and performance,
 
 **Apache Parquet** and **ORC** are columnar storage formats that are optimized for fast retrieval of data and used in AWS analytical applications.Columnar storage formats have the following characteristics that make them suitable for using with Athena:
 
-    Compression by column, with compression algorithm selected for the column data type to save storage space in Amazon S3 and reduce disk space and I/O during query processing.
-    Predicate pushdown in Parquet and ORC enables Athena queries to fetch only the blocks it needs, improving query performance. When an Athena query obtains specific column values from your data, it uses statistics from data block predicates, such as max/min values, to determine whether to read or skip the block.
-    Splitting of data in Parquet and ORC allows Athena to split the reading of data to multiple readers and increase parallelism during its query processing.
+* Compression by column, with compression algorithm selected for the column data type to save storage space in Amazon S3 and reduce disk space and I/O during query processing.
+* Predicate pushdown in Parquet and ORC enables Athena queries to fetch only the blocks it needs, improving query performance. When an Athena query obtains specific column values from your data, it uses statistics from data block predicates, such as max/min values, to determine whether to read or skip the block.
+* Splitting of data in Parquet and ORC allows Athena to split the reading of data to multiple readers and increase parallelism during its query processing.
 
 Read more here: https://docs.aws.amazon.com/athena/latest/ug/columnar-storage.html
 
