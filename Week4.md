@@ -46,6 +46,30 @@ Because of cost and performance,
 
 ### Using S3, Glue and Athena to Get Insights about NYC Taxi Data
 ### Reading: Columnar Data Formats and Amazon Athena Optimizations
+#### Columnar Data Formats and Amazon Athena Optimizations
+##### Columnar Data Format and Athena Partitioning
+
+**Apache Parquet** and **ORC** are columnar storage formats that are optimized for fast retrieval of data and used in AWS analytical applications.Columnar storage formats have the following characteristics that make them suitable for using with Athena:
+
+    Compression by column, with compression algorithm selected for the column data type to save storage space in Amazon S3 and reduce disk space and I/O during query processing.
+    Predicate pushdown in Parquet and ORC enables Athena queries to fetch only the blocks it needs, improving query performance. When an Athena query obtains specific column values from your data, it uses statistics from data block predicates, such as max/min values, to determine whether to read or skip the block.
+    Splitting of data in Parquet and ORC allows Athena to split the reading of data to multiple readers and increase parallelism during its query processing.
+
+Read more here: https://docs.aws.amazon.com/athena/latest/ug/columnar-storage.html
+
+By partitioning your data, you can restrict the amount of data Athena scans by each query, thus improving performance and reducing cost. Athena leverages Hive for partitioning data. You can partition your data by any key. A common practice is to partition the data based on time, often leading to a multi-level partitioning scheme. 
+
+Read more here: https://docs.aws.amazon.com/athena/latest/ug/partitions.html 
+#### AWS Glue Jobs   
+
+An AWS Glue job encapsulates a script that connects to your source data, processes it, and then writes it out to your data target. Typically, a job runs extract, transform, and load (ETL) scripts. Jobs can also run general-purpose Python scripts (Python shell jobs.) AWS Glue triggers can start jobs based on a schedule or event, or on demand. You can monitor job runs to understand runtime metrics such as completion status, duration, and start time.   
+
+AWS Glue provides a set of built-in transforms that you can use to process your data. You can call these transforms from your ETL script. Your data passes from transform to transform in a data structure called a DynamicFrame, which is an extension to an Apache Spark SQL DataFrame. The DynamicFrame contains your data, and you reference its schema to process your data.   
+
+Read more about transforms here: https://docs.aws.amazon.com/glue/latest/dg/built-in-transforms.html   
+
+Read about working with Glue Jobs here: https://docs.aws.amazon.com/glue/latest/dg/console-jobs.html    
+
 ### Introduction to Data Lake Security
 ### Reading: Security and Compliance
 
