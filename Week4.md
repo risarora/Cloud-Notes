@@ -48,7 +48,7 @@ Because of cost and performance,
 ### Reading: Columnar Data Formats and Amazon Athena Optimizations
 #### Columnar Data Formats and Amazon Athena Optimizations
 ##### Columnar Data Format and Athena Partitioning
-
+<details><summary>CLICK ME</summary>
 **Apache Parquet** and **ORC** are columnar storage formats that are optimized for fast retrieval of data and used in AWS analytical applications.Columnar storage formats have the following characteristics that make them suitable for using with Athena:
 
 * Compression by column, with compression algorithm selected for the column data type to save storage space in Amazon S3 and reduce disk space and I/O during query processing.
@@ -69,6 +69,7 @@ AWS Glue provides a set of built-in transforms that you can use to process your 
 Read more about transforms here: https://docs.aws.amazon.com/glue/latest/dg/built-in-transforms.html   
 
 Read about working with Glue Jobs here: https://docs.aws.amazon.com/glue/latest/dg/console-jobs.html    
+<details>
 
 ### Introduction to Data Lake Security
 ### Reading: Security and Compliance
