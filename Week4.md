@@ -9,6 +9,28 @@
 * Multiple types of Dataprep that you might create process for. 
  * **Shaping**
 
+![image](https://user-images.githubusercontent.com/4485129/118804680-a0732900-b8c2-11eb-9c6e-5f95b5b630a3.png)
+
+* Lambda is best used for transformation of real-time data since you can trigger Lambdas to run as data comes in.
+* Glue Jobs is best used for processing data in batches.
+
+AWS Glue has three main components. 
+* Glue data catalog, 
+* The crawlers and the classifiers
+* Glue Jobs.
+  * A job is the business logic that performs the ETL work in AWS Glue.
+
+* Choose a data source for your job
+* Choose a data target. This is where the data that gets transformed will be loaded.
+* then provide customized configurations for your job,
+
+You could run your job as an Apache ETL script, a Spark streaming script, or a Python shell script.
+You can choose to let Glue generate a script for you, or you can provide an S3 location with a script that you have already written for the job to use
+* Configure the transformation type 
+    * User can change the schema of a source data and create a new target dataset
+    * or User can find matching records.
+
+
 ### File Optimizations
 ### Using S3, Glue and Athena to Get Insights about NYC Taxi Data
 ### Reading: Columnar Data Formats and Amazon Athena Optimizations
