@@ -30,8 +30,20 @@ You can choose to let Glue generate a script for you, or you can provide an S3 l
     * User can change the schema of a source data and create a new target dataset
     * or User can find matching records.
 
-
 ### File Optimizations
+* Columnar data is optimum for most big data and data lake related queries as they mainly do aggregate operations 
+* Columnar data formats are also optimized for compression.
+* If you have a data set with columnar data format, and do a query that scans entire columns. 
+Under the hood, Athena will perform S3 partial GET operations, which will get only the specific part of S3 objects that contains the columns you were looking for.
+
+* File Optimization 
+    * file formats
+    * compression 
+    * partitioning
+    * optimizations 
+    * Dataprep 
+Because of cost and performance,
+
 ### Using S3, Glue and Athena to Get Insights about NYC Taxi Data
 ### Reading: Columnar Data Formats and Amazon Athena Optimizations
 ### Introduction to Data Lake Security
